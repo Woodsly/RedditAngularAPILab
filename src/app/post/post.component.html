@@ -1,0 +1,7 @@
+<h1>Awwww</h1>
+<div class="makeMePretty" *ngFor="let p of redditPost.data.children">
+  <a class="noUnderLine" href="https://reddit.com{{ p.data.permalink }}">
+    <p>{{ p.data.title }} - {{ p.data.ups }} upvotes</p>
+    <img height="100px" src="{{ p.data.thumbnail }}" />
+  </a>
+</div>
